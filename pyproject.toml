@@ -1,0 +1,36 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "mediafire-dl-cli"
+version = "1.1.0"
+description = "Robust MediaFire downloader with auto-resume, custom headers, retries, and bulk support."
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [
+    { name = "Dev-Mohamed-Ali", email = "devghoniem@gmail.com" }
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Internet :: WWW/HTTP",
+    "Topic :: Utilities",
+]
+dependencies = [
+    "requests>=2.28",
+    "beautifulsoup4>=4.12",
+    "urllib3>=2.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/Dev-Mohamed-Ali/mediafire-dl-cli"
+Issues = "https://github.com/Dev-Mohamed-Ali/mediafire-dl-cli/issues"
+
+[project.scripts]
+mediafire-dl-cli = "mediafire_dl_cli.__main__:main"
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["mediafire_dl_cli*"]

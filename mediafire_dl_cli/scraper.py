@@ -5,7 +5,7 @@ from .exceptions import ScraperError
 
 def GetName(url: str) -> str:
     """Extract filename from a MediaFire URL."""
-    return url.rstrip("/").split("/")[-1]
+    return url.split('/')[-2]
 
 
 def GetFileLink(url: str, session: requests.Session = None) -> str:

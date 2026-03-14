@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "mediafire-dl-cli"
-version = "1.1.0"
+version = "1.1.1"
 description = "Robust MediaFire downloader with auto-resume, custom headers, retries, and bulk support."
 readme = "README.md"
 requires-python = ">=3.9"
